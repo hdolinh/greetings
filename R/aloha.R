@@ -12,8 +12,7 @@ say_aloha <- function(name, color) {
 
   if(color == "green") {
 
-    message <- paste("Aloha,",
-                     name,
+    message <- paste("Aloha,", name,
                      emo::ji("palm_tree"),
                      emo::ji("sunny"),
                      emo::ji("ocean"))
@@ -31,5 +30,21 @@ say_aloha <- function(name, color) {
     cat(crayon::bgBlue(message))
   }
 
+}
+
+say_aloha_2 <- function(name, color) {
+
+  if(color == "green") {
+
+    message <- paste("Aloha,", name)
+
+    cat(crayon::bgGreen(message))
+  }
+
+  else if(color == "blue") {
+    message <- paste("Aloha,", name)
+
+    cat(crayon::bgBlue(message))
+  }
 
 }
